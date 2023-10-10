@@ -1,13 +1,13 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{html,ts}",
-    "./node_modules/flowbite/**/*.js" // add this line
-  ],
+  content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'hg': ["Hanken Grotesk"],
+        'gabito': ["Gabarito"]
+      },
+    },
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
+  plugins: [],
 }
+
